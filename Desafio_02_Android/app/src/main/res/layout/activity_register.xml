@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginTop="@dimen/dim_55dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:hint="@string/name"
+        app:boxBackgroundColor="@color/colorWhite">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etEmailRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginTop="@dimen/dim_120dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:hint="@string/email"
+        app:boxBackgroundColor="@color/colorWhite">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorPrimary" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etPasswordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginTop="@dimen/dim_190dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:hint="@string/password"
+        app:boxBackgroundColor="@color/colorWhite">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/colorPrimary" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etPasswordRepeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginTop="@dimen/dim_260dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:hint="@string/repeate_password"
+        app:boxBackgroundColor="@color/colorWhite">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/colorPrimary" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:layout_marginBottom="@dimen/dim_20dp"
+        android:backgroundTint="@color/colorRosa"
+        android:text="@string/register"
+        android:textColor="@color/colorWhite" />
+
+</FrameLayout>
