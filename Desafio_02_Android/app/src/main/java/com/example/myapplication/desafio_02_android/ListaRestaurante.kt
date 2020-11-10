@@ -13,7 +13,7 @@ class ListaRestaurante : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_lista_restaurante, container, false)
+        return inflater.inflate(R.layout.restaurante_view, container, false)
     }
 
 }

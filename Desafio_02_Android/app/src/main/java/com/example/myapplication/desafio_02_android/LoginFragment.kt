@@ -27,5 +27,9 @@ class LoginFragment : Fragment() {
         view.findViewById<Button>(R.id.btnRegisterLogin).setOnClickListener {
             navController.navigate(R.id.registerActivity)
         }
+
+        view.findViewById<Button>(R.id.btnLogin).setOnClickListener {
+            navController.navigate(R.id.homeActivity)
+        }
     }
 }

@@ -10,23 +10,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity android:name=".HomeActivity"
+            android:label="Digital House Foods"
+            android:theme="@style/AppTheme"/>
+
         <activity
             android:name=".RegisterActivity"
-            android:label="Register"
             android:icon="@drawable/ic_baseline_arrow_back_24"
-            />
+            android:label="Register"/>
+
         <activity
             android:name=".SplashActivity"
             android:theme="@style/AppThemeNoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
         <activity
             android:name=".MainActivity"
             android:label="Digital House Foods" />
+
     </application>
 
 </manifest>
