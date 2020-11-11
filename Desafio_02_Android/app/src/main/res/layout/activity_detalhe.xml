@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".detalhe.DetalheActivity">
+
+    <ImageView
+        android:id="@+id/imgDetalhe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_260dp"/>
+
+    <ImageView
+        android:id="@+id/btnVoltaDetalhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_10dp"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/tvNomeDetalhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dim_24sp"
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/dim_220dp"/>
+
+    <TextView
+        android:id="@+id/tvDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_280dp"
+        android:textSize="@dimen/dim_24sp"/>
+</FrameLayout>

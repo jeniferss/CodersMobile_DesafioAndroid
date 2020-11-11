@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".RegisterActivity">
+    tools:context=".register.RegisterActivity">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dim_20dp"
-        android:layout_marginTop="@dimen/dim_55dp"
+        android:layout_marginTop="@dimen/dim_30dp"
         android:layout_marginEnd="@dimen/dim_20dp"
         android:hint="@string/name"
         app:boxBackgroundColor="@color/colorWhite">
@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dim_20dp"
-        android:layout_marginTop="@dimen/dim_120dp"
+        android:layout_marginTop="@dimen/dim_100dp"
         android:layout_marginEnd="@dimen/dim_20dp"
         android:hint="@string/email"
         app:boxBackgroundColor="@color/colorWhite">
@@ -47,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dim_20dp"
-        android:layout_marginTop="@dimen/dim_190dp"
+        android:layout_marginTop="@dimen/dim_170dp"
         android:layout_marginEnd="@dimen/dim_20dp"
         android:hint="@string/password"
         app:boxBackgroundColor="@color/colorWhite">
@@ -65,7 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dim_20dp"
-        android:layout_marginTop="@dimen/dim_260dp"
+        android:layout_marginTop="@dimen/dim_240dp"
         android:layout_marginEnd="@dimen/dim_20dp"
         android:hint="@string/repeate_password"
         app:boxBackgroundColor="@color/colorWhite">
@@ -87,7 +87,9 @@
         android:layout_marginEnd="@dimen/dim_20dp"
         android:layout_marginBottom="@dimen/dim_20dp"
         android:backgroundTint="@color/colorRosa"
+        android:padding="@dimen/dim_10dp"
         android:text="@string/register"
-        android:textColor="@color/colorWhite" />
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dim_18sp" />
 
 </FrameLayout>

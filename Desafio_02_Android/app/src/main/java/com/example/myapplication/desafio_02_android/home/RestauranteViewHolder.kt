@@ -1,12 +1,10 @@
-package com.example.myapplication.desafio_02_android
+package com.example.myapplication.desafio_02_android.home
 
-import android.os.Parcel
-import android.os.Parcelable
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.squareup.picasso.Picasso
+import com.example.myapplication.desafio_02_android.R
 
 class RestauranteViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
 
@@ -21,6 +19,5 @@ class RestauranteViewHolder(private val view: View) : RecyclerView.ViewHolder(vi
         horarioRestaurante.text = restaurante.horario
         imageRestaurante.setImageResource(restaurante.imageId)
     }
-
 }
 

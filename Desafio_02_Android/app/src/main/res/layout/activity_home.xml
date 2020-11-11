@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".home.HomeActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/resturanteLista"
+        android:id="@+id/listaRestaurante"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:listitem="@layout/restaurante_view"/>
-
+        tools:listitem="@layout/restaurante_item"/>
 
 </LinearLayout>
