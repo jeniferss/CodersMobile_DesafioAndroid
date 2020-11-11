@@ -36,6 +36,10 @@ class MenuActivity : AppCompatActivity() {
 
         findViewById<TextView>(R.id.tvNomeMenu).text = intent.getStringExtra("NOME_RESTAURANTE")
 
+        val image = intent.getIntExtra("IMAGE_RESTAURANTE", 0)
+        findViewById<ImageView>(R.id.imgMenu).setImageResource(image)
+
+
         val viewManager = GridLayoutManager(this, 2)
         val recyclerView = findViewById<RecyclerView>(R.id.pratoLista)
 
@@ -47,6 +51,7 @@ class MenuActivity : AppCompatActivity() {
             val intent = Intent(this, DetalheActivity::class.java)
             intent.putExtra("NOME", it.nomePrato)
             intent.putExtra("DESCRICAO", it.descricao)
+            intent.putExtra("IMAGE_PRATO", it.imageIdPrato)
             startActivity(intent)
         }
 
@@ -57,4 +62,5 @@ class MenuActivity : AppCompatActivity() {
         }
     }
 }
+
 
