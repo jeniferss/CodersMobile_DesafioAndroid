@@ -1,10 +1,13 @@
 package com.example.myapplication.desafio_02_android.register
 
 import android.content.Intent
+import android.graphics.drawable.Drawable
+import android.graphics.drawable.Icon
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import com.example.myapplication.desafio_02_android.R
 import com.example.myapplication.desafio_02_android.home.HomeActivity
@@ -20,6 +23,7 @@ class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         findViewById<Button>(R.id.btnRegister).setOnClickListener {
 
@@ -38,7 +42,11 @@ class RegisterActivity : AppCompatActivity() {
                 clear()
             }
         }
+    }
 
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
     }
 
     private fun checarCampos(name: String, email: String, senha: String, senhaRepetir: String) {
@@ -67,6 +75,7 @@ class RegisterActivity : AppCompatActivity() {
         findViewById<TextInputEditText>(R.id.etPasswordRegister).text!!.clear()
         findViewById<TextInputEditText>(R.id.etPasswordRepeat).text!!.clear()
     }
+
 
 }
 
