@@ -11,11 +11,15 @@ class DetalheActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detalhe)
 
-        val imagem = intent.getStringExtra("IMAGE")!!.toInt()
         val nome = intent.getStringExtra("NOME")
+        val descricao = intent.getStringExtra("DESCRICAO")
 
 
         findViewById<TextView>(R.id.tvNomeDetalhe).text = nome
-        findViewById<ImageView>(R.id.imgDetalhe).setImageResource(imagem)
+        findViewById<TextView>(R.id.tvDescricao).text = descricao
+
+        findViewById<ImageView>(R.id.btnVoltaDetalhe).setOnClickListener {
+            finish()
+        }
     }
 }

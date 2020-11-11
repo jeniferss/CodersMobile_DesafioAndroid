@@ -37,7 +37,6 @@ class HomeActivity : AppCompatActivity() {
         )
     )
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
@@ -47,7 +46,8 @@ class HomeActivity : AppCompatActivity() {
 
         val viewAdapter = RestauranteAdapter(listaRestaurante) {
             val intent = Intent(this, MenuActivity::class.java)
-            intent.putExtra("IMAGE RESTAURANTE", it.imageId)
+            intent.putExtra("NOME_RESTAURANTE", it.nome)
+            intent.putExtra("IMAGE_RESTAURANTE", it.imageId)
             startActivity(intent)
         }
 

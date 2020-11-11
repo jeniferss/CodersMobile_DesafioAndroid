@@ -23,14 +23,18 @@
         android:id="@+id/tvNomeDetalhe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/dim_24sp"
+        android:textSize="@dimen/dim_20sp"
+        android:layout_marginStart="@dimen/dim_10dp"
+        android:layout_marginEnd="@dimen/dim_10dp"
         android:maxLines="1"
         android:layout_marginTop="@dimen/dim_220dp"/>
 
     <TextView
         android:id="@+id/tvDescricao"
+        android:layout_marginStart="@dimen/dim_10dp"
+        android:layout_marginEnd="@dimen/dim_10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dim_280dp"
-        android:textSize="@dimen/dim_24sp"/>
+        android:textSize="@dimen/dim_15sp"/>
 </FrameLayout>

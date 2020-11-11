@@ -3,36 +3,58 @@ package com.example.myapplication.desafio_02_android.menu
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.desafio_02_android.R
+import com.example.myapplication.desafio_02_android.detalhe.DetalheActivity
 
 class MenuActivity : AppCompatActivity() {
+
+    val descricao =  "Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto " +
+            "Texto TextoTexto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto " +
+            "Texto Texto Texto Texto Text oTexto Texto Texto Texto Texto Texto Texto Texto "
+
+    val listaPrato = arrayListOf(
+        Prato("Salada com molho Gengibre", R.drawable.res_02, descricao),
+        Prato("Salada com molho Gengibre", R.drawable.res_02, descricao),
+        Prato("Salada com molho Gengibre", R.drawable.res_02, descricao),
+        Prato("Salada com molho Gengibre", R.drawable.res_02, descricao),
+        Prato("Salada com molho Gengibre", R.drawable.res_02, descricao),
+        Prato("Salada com molho Gengibre", R.drawable.res_02, descricao),
+        Prato("Salada com molho Gengibre", R.drawable.res_02, descricao),
+        Prato("Salada com molho Gengibre", R.drawable.res_02, descricao),
+        Prato("Salada com molho Gengibre", R.drawable.res_02, descricao),
+        Prato("Salada com molho Gengibre", R.drawable.res_02, descricao),
+    )
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
-        val listaPrato = arrayListOf(
-            Prato("AB", R.drawable.res_01),
-            Prato("CD", R.drawable.res_02)
-        )
+        findViewById<TextView>(R.id.tvNomeMenu).text = intent.getStringExtra("NOME_RESTAURANTE")
 
         val viewManager = GridLayoutManager(this, 2)
         val recyclerView = findViewById<RecyclerView>(R.id.pratoLista)
 
-        val viewAdapter = PratoAdapter(listaPrato){
-            val viewAdapter = PratoAdapter(listaPrato) {
-                val intent = Intent(this, MenuActivity::class.java)
-                intent.putExtra("NOME", it.nomePrato)
-                intent.putExtra("IMAGE", it.imageIdPrato)
-                startActivity(intent)
-            }
-
-            recyclerView.apply {
-                setHasFixedSize(true)
-                layoutManager = viewManager
-                adapter = viewAdapter
-            }
+        findViewById<ImageView>(R.id.btnVoltaMenu).setOnClickListener {
+            finish()
         }
+
+        val viewAdapter = PratoAdapter(listaPrato) {
+            val intent = Intent(this, DetalheActivity::class.java)
+            intent.putExtra("NOME", it.nomePrato)
+            intent.putExtra("DESCRICAO", it.descricao)
+            startActivity(intent)
+        }
+
+        recyclerView.apply {
+            setHasFixedSize(true)
+            layoutManager = viewManager
+            adapter = viewAdapter
         }
     }
+}
+
