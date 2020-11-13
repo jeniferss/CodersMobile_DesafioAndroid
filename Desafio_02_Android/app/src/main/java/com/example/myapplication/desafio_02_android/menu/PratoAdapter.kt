@@ -5,13 +5,13 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.desafio_02_android.R
 
-class PratoAdapter (private val pratos:List<Prato>, private val listener: (Prato) -> Unit):
+class PratoAdapter(private val pratos: List<Prato>, private val listener: (Prato) -> Unit) :
     RecyclerView.Adapter<PratoViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PratoViewHolder {
 
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.prato_view, parent,false)
+            .inflate(R.layout.prato_view, parent, false)
         return PratoViewHolder(view)
     }
 

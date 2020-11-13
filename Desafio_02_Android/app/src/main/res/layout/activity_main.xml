@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:background="@color/colorWhite"
+    android:orientation="vertical"
     tools:context=".login.MainActivity">
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dim_20dp"
-        android:layout_marginEnd="@dimen/dim_20dp"
         android:layout_marginTop="@dimen/dim_20dp"
-        app:boxBackgroundColor="@color/colorWhite"
-        android:hint="@string/email">
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:hint="@string/email"
+        app:boxBackgroundColor="@color/colorWhite">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
-            android:textColor="@color/colorPrimary"
-            />
+            android:textColor="@color/colorPrimary" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -31,18 +30,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dim_20dp"
-        android:layout_marginEnd="@dimen/dim_20dp"
         android:layout_marginTop="@dimen/dim_90dp"
-        app:boxBackgroundColor="@color/colorWhite"
-        android:hint="@string/password">
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:hint="@string/password"
+        app:boxBackgroundColor="@color/colorWhite">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:textColor="@color/colorPrimary"
-            />
+            android:textColor="@color/colorPrimary" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -50,34 +48,59 @@
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/log_in"
         android:layout_marginStart="@dimen/dim_20dp"
-        android:layout_marginEnd="@dimen/dim_20dp"
-        android:textSize="@dimen/dim_18sp"
-        android:textColor="@color/colorWhite"
         android:layout_marginTop="@dimen/dim_200dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:backgroundTint="@color/colorRosa"
         android:padding="@dimen/dim_10dp"
-        android:backgroundTint="@color/colorRosa"/>
+        android:text="@string/log_in"
+        android:textColor="@color/colorWhite" />
 
     <Button
         android:id="@+id/btnRegisterLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
         android:layout_marginStart="@dimen/dim_20dp"
         android:layout_marginEnd="@dimen/dim_20dp"
-        android:textColor="@color/colorWhite"
-        android:backgroundTint="@color/colorCinza"
-        android:layout_gravity="bottom"
-        android:padding="@dimen/dim_10dp"
-        android:textSize="@dimen/dim_18sp"
         android:layout_marginBottom="@dimen/dim_100dp"
-        android:text="@string/register"/>
+        android:backgroundTint="@color/colorCinza"
+        android:padding="@dimen/dim_10dp"
+        android:text="@string/register"
+        android:textColor="@color/colorWhite" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_gravity="center"
-        android:text="@string/or"
-        android:textSize="@dimen/dim_15sp"/>
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_weight="1"
+        android:src="@drawable/line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/or"
+            android:gravity="center"
+            android:layout_margin="@dimen/dim_10dp"
+            android:layout_weight="0.5"
+            android:textSize="@dimen/dim_15sp" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/line" />
+
+    </LinearLayout>
 
 </FrameLayout>

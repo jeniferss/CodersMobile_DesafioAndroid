@@ -47,14 +47,14 @@ class MainActivity : AppCompatActivity() {
         if (email.trim().isEmpty()) {
             findViewById<TextInputEditText>(R.id.etEmail).error = ERRO_VAZIO
             PROSSEGUIR_L = false
-        }else if (senha.trim().isEmpty()) {
+        } else if (senha.trim().isEmpty()) {
             findViewById<TextInputEditText>(R.id.etPassword).error = ERRO_VAZIO
             PROSSEGUIR_L = false
         } else PROSSEGUIR_L = true
 
     }
 
-    private fun clear(){
+    private fun clear() {
         findViewById<TextInputEditText>(R.id.etEmail).text!!.clear()
         findViewById<TextInputEditText>(R.id.etPassword).text!!.clear()
 

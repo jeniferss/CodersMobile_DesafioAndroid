@@ -89,7 +89,6 @@
         android:backgroundTint="@color/colorRosa"
         android:padding="@dimen/dim_10dp"
         android:text="@string/register"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/dim_18sp" />
+        android:textColor="@color/colorWhite" />
 
 </FrameLayout>

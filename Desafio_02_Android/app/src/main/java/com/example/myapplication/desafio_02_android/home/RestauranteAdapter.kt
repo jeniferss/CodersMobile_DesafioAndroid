@@ -6,12 +6,16 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.desafio_02_android.R
 
 
-class RestauranteAdapter(private val restaurantes:List<Restaurante>, private val listenerH: (Restaurante) -> Unit):
+class RestauranteAdapter(
+    private val restaurantes: List<Restaurante>,
+    private val listenerH: (Restaurante) -> Unit
+) :
     RecyclerView.Adapter<RestauranteViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RestauranteViewHolder {
 
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.restaurante_item, parent,false)
+        val view =
+            LayoutInflater.from(parent.context).inflate(R.layout.restaurante_item, parent, false)
         return RestauranteViewHolder(view)
     }
 

@@ -11,11 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".detalhe.DetalheActivity"
-            android:theme="@style/AppThemeNoActionBar"/>
+        <activity
+            android:name=".detalhe.DetalheActivity"
+            android:theme="@style/AppThemeNoActionBar" />
 
-        <activity android:name=".menu.MenuActivity"
-            android:theme="@style/AppThemeNoActionBar"/>
+        <activity
+            android:name=".menu.MenuActivity"
+            android:theme="@style/AppThemeNoActionBar" />
 
         <activity
             android:name=".home.HomeActivity"

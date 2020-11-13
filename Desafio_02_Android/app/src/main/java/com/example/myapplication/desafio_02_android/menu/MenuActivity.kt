@@ -13,9 +13,9 @@ import com.example.myapplication.desafio_02_android.detalhe.DetalheActivity
 
 class MenuActivity : AppCompatActivity() {
 
-    val descricao =  "Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto " +
-            "Texto TextoTexto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto " +
-            "Texto Texto Texto Texto Text oTexto Texto Texto Texto Texto Texto Texto Texto "
+    val descricao = "Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto " +
+            "Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto " +
+            "Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto "
 
     val listaPrato = arrayListOf(
         Prato("Salada com molho Gengibre", R.drawable.res_02, descricao),

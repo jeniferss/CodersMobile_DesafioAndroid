@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginStart="@dimen/dim_10dp"
     android:layout_marginTop="@dimen/dim_10dp"
     android:layout_marginEnd="@dimen/dim_10dp"
@@ -16,8 +16,8 @@
         <ImageView
             android:id="@+id/imgRestaurante"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/dim_200dp"
-            android:layout_marginBottom="@dimen/dim_10dp" />
+            android:layout_height="@dimen/dim_190dp"
+            android:layout_marginBottom="@dimen/dim_5dp" />
 
         <TextView
             android:id="@+id/tvNomeRestaurante"
@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dim_10dp"
             android:layout_marginEnd="@dimen/dim_10dp"
-            android:layout_marginBottom="@dimen/dim_10dp"
+            android:layout_marginBottom="@dimen/dim_5dp"
             android:maxLines="1"
             android:textSize="@dimen/dim_20sp"
             android:textStyle="bold" />
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dim_10dp"
             android:layout_marginEnd="@dimen/dim_10dp"
-            android:layout_marginBottom="@dimen/dim_10dp"
+            android:layout_marginBottom="@dimen/dim_5dp"
             android:maxLines="1"
             android:textSize="@dimen/dim_15sp" />
 
@@ -51,8 +51,5 @@
             android:textSize="@dimen/dim_15sp" />
 
     </LinearLayout>
-
-
-
 
 </com.google.android.material.card.MaterialCardView>

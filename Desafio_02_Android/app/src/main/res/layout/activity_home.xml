@@ -10,6 +10,6 @@
         android:id="@+id/listaRestaurante"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:listitem="@layout/restaurante_item"/>
+        tools:listitem="@layout/restaurante_item" />
 
 </LinearLayout>

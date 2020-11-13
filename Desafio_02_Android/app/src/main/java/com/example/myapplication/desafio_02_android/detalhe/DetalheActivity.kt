@@ -14,8 +14,8 @@ class DetalheActivity : AppCompatActivity() {
         val nome = intent.getStringExtra("NOME")
         val descricao = intent.getStringExtra("DESCRICAO")
         val image = intent.getIntExtra("IMAGE_PRATO", 0)
-        findViewById<ImageView>(R.id.imgDetalhe).setImageResource(image)
 
+        findViewById<ImageView>(R.id.imgDetalhe).setImageResource(image)
         findViewById<TextView>(R.id.tvNomeDetalhe).text = nome
         findViewById<TextView>(R.id.tvDescricao).text = descricao
 
